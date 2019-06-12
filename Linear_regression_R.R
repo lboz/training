@@ -70,14 +70,18 @@ modelA <- lm(varDep ~ V1 + V2 + V3 + V4, data = dataTrain)
 #	ex - monthly data - month as factor
 #		modelB <- lm(varDep ~ v1 + v2 + v3 + v4 + month1, data = dataTrain)
 summary(modelA)
+
 modelA$residuals
 sort(abs(residuals)
+# the best model - min SSE - sum of squered errors - but depends on N
 SSE = sum(modelA$residuals^2)
 SSE
+# Root-Mean-Square-Error
 RMSE = sqrt(SSE/nrow(statedata))
 RMSE
-
+# Automatically Building the Model 
 stepmodel <- step(modelA)
+# AIC - to be done
  
 # 7. Prediction
 predTest <-predict(modelA, newdata = dataTest)
@@ -89,6 +93,7 @@ SSE = sum((dataTest$varDep - predTest)^2)
 SSE
 SST = sum((dataTest$varDep - mean(statedata$varDep))^2)
 SST
+# R2 - captures the value added from using a model
 R2 = 1-SSE/SST
 R2
 RMSE = sqrt(SSE/nrow(dataTest))
