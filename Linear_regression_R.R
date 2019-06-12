@@ -1,4 +1,4 @@
-# Linear_Regression with R
+# Linear Regression with R
 
 # data: statedata.csv
 # libraries:
