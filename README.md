@@ -1,4 +1,4 @@
-# training
+# training - WORK IN PROGRESS
 Trees related code
 - step-by-step analysis
 - personal code libraries by software - R, Python, SAS
