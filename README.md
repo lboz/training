@@ -1,23 +1,13 @@
 # training
 
-- Personal code libraries by software - R, Python, SAS, Kotlin
-- my training classes - MOOC (edX), linkedin learning, etc.
-MOOC:
+- Personal code libraries by software - R code
 
-### - Linear Regression
-  - R code - MOOC Analytics Edge - MIT
-### - Regression Trees
-  - R code - MOOC Analytics Edge - MIT
-    - Optimal Trees - TBD
-### - Logistic Regression
-  - R code - MOOC Analytics Edge - MIT
-### - Clustering
-  - R code - MOOC Analytics Edge - MIT
-### - Text
-  - R code - MOOC Analytics Edge - MIT
-### - Linear Optimization 
-  - R code - MOOC Analytics Edge - MIT
-### - Integer Optimization 
-  - R code - MOOC Analytics Edge - MIT
-### - Neuronal Network
-  - TBD
+MOOC: The Analytics Edge - MIT on edX - 2019
+
+- Linear Regression
+- Regression Trees
+- Logistic Regression
+- Clustering
+- Text
+- Linear Optimization 
+- Integer Optimization 
