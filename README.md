@@ -5,7 +5,7 @@ Trees related code
 
 Sources: MOOC, linkedin learning, etc.
 
-### - Trees in R - MOOC Analytics Edge - MIT
+### - R code - MOOC Analytics Edge - MIT
   using Boston.csv data file
-### - Trees in SAS - cours HEC Montreal
-### - Trees in Python - TBD
+### - SAS code - cours HEC Montreal
+### - Python code - TBD
