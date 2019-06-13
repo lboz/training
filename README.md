@@ -8,6 +8,7 @@ MOOC:
   - R code - MOOC Analytics Edge - MIT
 ### - Regression Trees
   - R code - MOOC Analytics Edge - MIT
+    - Optimal Trees - TBD
 ### - Logistic Regression
   - R code - MOOC Analytics Edge - MIT
 ### - Clustering
