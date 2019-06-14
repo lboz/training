@@ -1,8 +1,9 @@
-# training
+# Clustering code 
 
 My code library - Step-By-Step analysis
 
-All training classes - MOOC, linkedin learning, etc.
-- Personal code libraries by software - R, Python, SAS, Kotlin
+Source: MOOC - The Analytics Edge - MIT, 2019
+
+
 
 
