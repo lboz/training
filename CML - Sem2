@@ -1,0 +1,50 @@
+
+
+- How to use the triangle inequality to help the search
+- Real real-time navigation
+
+- Stable marriage algorithms
+    - "fairness"
+    - stable // unstable situations
+    - Applications
+      - matching residents to hospitals in US
+      - dental residencies and medical specialties in the US, CA, and parts of UK
+      - sorority rush
+      - matching students to public schools - NY
+      - placement of Can loyers in ON and AB
+
+Data Structures      
+ - Dictionaries 
+  - 
+ - Trivial approches
+    - array A[.] of size U
+    - list of elements in S
+    
+ - Hashing
+    - map large universe U to small set M
+    - choice of hashing function
+    - collision resolution strategy
+    - Applications
+        - hash table with chaining - linked list for all elements that hash to same value
+        - 
+ 
+ - Binary Search trees
+    - Balanced BST - if BST close to a full bi...
+    - restructuring
+    
+Dynamic programming
+  - problem reduced to simpler/smaller subproblems
+  - Principe of optimality
+  - Subproblems solved from smaller to larger and results tabulated (Memoization)
+  - Applications :
+        - comparison of DNA strings
+        - difference btw files (ex. versions of a doc)
+        - 
+
+
+
+
+
+
+
+
