@@ -571,22 +571,21 @@ print(iterPower(3,3))
 # an integer ≥0. It should return one numerical value. Your code must be recursive
 # - use of the ** operator or looping constructs is not allowed. 
 
+
 def recurPower(base, exp):
     '''
     base: int or float.
     exp: int >= 0
- 
+
     returns: int or float, base^exp
     '''
-    if base == 1:
+    # Base case is when exp = 0
+    if exp <= 0:
         return 1
-    elif exp == 1:
-        return base
-    elif exp == 0:
-        return 1
-    else:
-        return base*recurPower(base, exp-1)
-print(recurPower(-2,3))
+
+    # Otherwise, exp must be > 0, so return 
+    #  base* base^(exp-1). This is the recursive case.
+    return base * recurPower(base, exp - 1)
 
 ############################################################
 # Mathematical Induction - Towers of Hanoi
@@ -622,7 +621,7 @@ def gcdIter(a, b):
     a, b: positive integers
     returns: a positive integer, the greatest common divisor of a & b.
     '''
- while a != b: 
+    while a != b: 
         if a > b:
            a = a - b
         else:
@@ -631,6 +630,19 @@ def gcdIter(a, b):
 print(gcdIter(17, 12))       
 
 
+# V2
+def gcdIter(a, b):
+    '''
+    a, b: positive integers
+    returns: a positive integer, the greatest common divisor of a & b.
+    '''
+    testValue = min(a, b)
+
+    # Keep looping until testValue divides both a & b evenly
+    while a % testValue != 0 or b % testValue != 0:
+        testValue -= 1
+
+    return testValue
 ###################################################################
 # The greatest common divisor of two positive integers is the largest integer
 # that divides each of them without remainder. For example,
