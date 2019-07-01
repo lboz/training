@@ -4,6 +4,11 @@
 - my training classes - MOOC (edX), linkedin learning, etc.
 MOOC:
 
+- Notes de cours
+- String Search Summary
+- 
+
+Analysis:
 ### - Linear Regression
   - R code - MOOC Analytics Edge - MIT
 ### - Regression Trees
