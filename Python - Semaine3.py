@@ -24,7 +24,7 @@ t[1:2]            # gives "('one',)"
         
 # iterate
 
-def getData(aTuple):
+def getData(aTuple):[]
     nums = ()
     words = ()
     for t in aTuple:
@@ -42,7 +42,7 @@ def getData(aTuple):
 
 small
 large
-word
+words
 words
 
 #####################################
@@ -502,18 +502,49 @@ def how_many(aDict):
 print(how_many(animals))         # returns 6
 
 
+# V2
+
+def how_many(aDict):
+    '''
+    aDict: A dictionary, where all the values are lists.
+
+    returns: int, how many individual values are in the dictionary.
+    '''
+    result = 0
+    for value in aDict.values():
+        # Since all the values of aDict are lists, aDict.values() will 
+        #  be a list of lists
+        result += len(value)
+    return result
+
+
+# V3:
+    
+def how_many(aDict):
+    '''
+    Another way to solve the problem.
+
+    aDict: A dictionary, where all the values are lists.
+
+    returns: int, how many individual values are in the dictionary.
+    '''
+    result = 0
+    for key in aDict.keys():
+        result += len(aDict[key])
+    return result
+
+
+
 #########
 # ex. 2:
 ######### 
-
-# A FAIRE
 
 animals = { 'a': ['aardvark'], 'b': ['baboon'], 'c': ['coati']}
 
 animals['d'] = ['donkey']
 animals['d'].append('dog')
 animals['d'].append('dingo')
-len(animals['dog'])
+#len(animals['dog'])
 
 def biggest(aDict):
     '''
@@ -521,16 +552,33 @@ def biggest(aDict):
 
     returns: The key with the largest number of values associated with it
     '''
-
+    d1 = {}
     for i in aDict:
         count = 0
         for j in aDict[i]:
             count+=1
-    return i
+        d1[i] = [count]
+    
+    return max(d1, key = d1.get)           
+
+print(biggest(animals))
 
 
-biggest(animals)                # returns 'd'
+# V2
+    
+def biggest(aDict):
+    '''
+    aDict: A dictionary, where all the values are lists.
 
+    returns: The key with the largest number of values associated with it
+    '''
+    result = None
+    biggestValue = 0
+    for key in aDict.keys():
+        if len(aDict[key]) >= biggestValue:
+            result = key
+            biggestValue = len(aDict[key])
+    return result
 
 #########################################################################
 # Fibonacci et Dictionaries - memoization
