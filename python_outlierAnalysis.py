@@ -52,18 +52,18 @@ df = pd.read_csv(
      filepath_or_buffer='C:/Users/Lillian Pierson/Desktop/Exercise Files/Ch05/05_02/iris.data.csv',
      header=None, sep=',')
  
-df.columns=['Sepal Length','Sepal Width','Petal Length','Petal Width', 'Species']\n",
+df.columns=['Sepal Length','Sepal Width','Petal Length','Petal Width', 'Species']
 data = df.ix[:,0:4].values
 target = df.ix[:,4].values
 df[:5]
 
 sb.boxplot(x='Species', y='Sepal Length', data=df, palette='hls')
 
-"### Looking at the scatterplot matrix
+### Looking at the scatterplot matrix
  sb.pairplot(df, hue='Species', palette='hls')
 
 
-"## Segment 3 - DBSCan clustering to identify outliers - less than 5% of outliers
+## Segment 3 - DBSCan clustering to identify outliers - less than 5% of outliers
 import pandas as pd
 
 import matplotlib.pyplot as plt
@@ -74,14 +74,14 @@ import sklearn
 from sklearn.cluster import DBSCAN
 from collections import Counter
  
- %matplotlib inline
+%matplotlib inline
 rcParams['figure.figsize'] = 5, 4
 sb.set_style('whitegrid')
  
-"### DBSCan clustering to identify outliers\n",
-"#### Train your model and identify outliers"
-  df = pd.read_csv
- filepath_or_buffer='C:/Users/Lillian Pierson/Desktop/Exercise Files/Ch05/05_03/iris.data.csv',\n",
+### DBSCan clustering to identify outliers
+#### Train your model and identify outliers
+df = pd.read_csv
+filepath_or_buffer='C:/Users/Lillian Pierson/Desktop/Exercise Files/Ch05/05_03/iris.data.csv'
        header=None, sep=',')
   
 df.columns=['Sepal Length','Sepal Width','Petal Length','Petal Width', 'Species']
@@ -90,9 +90,9 @@ target = df.ix[:,4].values
 df[:5]
  
 model = DBSCAN(eps=0.8, min_samples=19).fit(data)
-print model
+print(model)
  
- "#### Visualize your results"
+#### Visualize your results"
  outliers_df = pd.DataFrame(data)
 
 print Counter(model.labels_)
