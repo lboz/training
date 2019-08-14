@@ -23,5 +23,9 @@ Week 2
     ps2_visualize
 
 Week 3
+    P2_InferentialStatistics_Roulette
+    P2_MonteCarlo
+    P2_ps3
+
 Week 4
 Week 5
