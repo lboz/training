@@ -1,6 +1,12 @@
 '''
 Inferential Statistics
 ---------------------------
+Inferential Statistics
+- population - a set of examples
+- sample - a proper subset of a population
+    - random sample - tends to exhibit the same properties as the population 
+                      from which it is drawn
+                      
 Law of Large Numbers - in repeted independent tests with the same actual 
 probability p of a particular outcome in each test, the chance that the 
 fraction of times that outcome occurs differs from p converges to zero as 
