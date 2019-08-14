@@ -8,6 +8,7 @@ the number of trials goes to infinity
 
 Gambler's Fallacy
 Regression to the mean
+Central Limit Theorem (CLT)
 
 Empirical Rule:
     - ~ 68% of data within 1 STDV of the mean
