@@ -26,6 +26,7 @@ Week 3
 
     * P2_InferentialStatistics_Roulette
     * P2_MonteCarlo
+    * P2_dataSampling
     * P2_ps3
 
 Week 4
